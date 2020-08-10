@@ -19,6 +19,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
+      .anchor {
+        margin-bottom: 60px;
+      }
       .row div {
         border: 1px solid black;
       }
@@ -39,42 +42,67 @@
       <div class="collapse navbar-collapse" id="myNav1">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="" class="nav-link">Link 1</a>
+            <a href="#grid-layout" class="nav-link">grid layout</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Link 2</a>
+            <a href="#display" class="nav-link">display</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Link 3</a>
+            <a href="#lists" class="nav-link">lists</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Link 4</a>
+            <a href="#jumbotron" class="nav-link">jumbotron</a>
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="http://example.com"
-              id="navbarDropdownMenuLink1"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
+          <li class="nav-item">
+            <a href="#buttons" class="nav-link">buttons</a>
+          </li>
+          <li class="nav-item">
+            <a href="#radio-checkboxes" class="nav-link"
+              >radio and checkboxes</a
             >
-              Dropdown link
-            </a>
-            <div
-              class="dropdown-menu"
-              aria-labelledby="navbarDropdownMenuLink1"
-            >
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#progress-bars" class="nav-link">progress bars</a>
+          </li>
+          <li class="nav-item">
+            <a href="#text-bg-colors" class="nav-link">text and bg colors</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tables" class="nav-link">tables</a>
+          </li>
+          <li class="nav-item">
+            <a href="#cards" class="nav-link">cards</a>
+          </li>
+          <li class="nav-item">
+            <a href="#forms" class="nav-link">forms</a>
+          </li>
+          <li class="nav-item">
+            <a href="#dropdown" class="nav-link">dropdown</a>
+          </li>
+          <li class="nav-item">
+            <a href="#alerts" class="nav-link">alerts</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tooltips" class="nav-link">tooltips</a>
+          </li>
+          <li class="nav-item">
+            <a href="#collapse" class="nav-link">collapse</a>
+          </li>
+          <li class="nav-item">
+            <a href="#modals" class="nav-link">modals</a>
+          </li>
+          <li class="nav-item">
+            <a href="#carousel" class="nav-link">carousel</a>
+          </li>
+          <li class="nav-item">
+            <a href="#navigation" class="nav-link">navigation</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <div class="container">
+      <hr class="anchor" id="grid-layout" />
       <div class="h2">
         grid layout; classes used: <code>row, col, order, and more</code>
       </div>
@@ -121,10 +149,11 @@
         <div class="col-sm-2 col-md col-lg-2">Col 3</div>
       </div>
 
-      <hr />
+      <hr class="anchor" id="display" />
 
       <div class="h2">
-        classes used: <code>display, lead, blockquote, blockquote-footer</code>
+        display; classes used:
+        <code>display, lead, blockquote, blockquote-footer</code>
       </div>
       <p class="display-4">My Heading</p>
 
@@ -153,12 +182,11 @@
         <footer class="blockquote-footer">name</footer>
       </blockquote>
 
-      <hr />
+      <hr class="anchor" id="lists" />
 
       <div class="h2">
-        classes used: <code>list-group, list-group-item, and more</code>
+        lists; classes used: <code>list-group, list-group-item, and more</code>
       </div>
-      <div class="h2"></div>
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
         ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
@@ -185,10 +213,10 @@
         <li class="list-group-item list-group-item-success">Three</li>
       </ul>
 
-      <hr />
+      <hr class="anchor" id="jumbotron" />
 
       <div class="h2">
-        classes used:
+        jumbotron; classes used:
         <code
           >jumbotron, badge, img-fluid, list-group, list-group-item, and
           more</code
@@ -250,10 +278,10 @@
         </div>
       </div>
 
-      <hr />
+      <hr class="anchor" id="buttons" />
 
       <div class="h2">
-        classes used:
+        buttons; classes used:
         <code>btn, btn-toolbar, btn-outline, btn-group, and more</code>
       </div>
 
@@ -349,7 +377,7 @@
         </div>
       </div>
 
-      <hr />
+      <hr class="anchor" id="radio-checkboxes" />
 
       <div class="h2">
         radio and checkboxes; classes used:
@@ -380,7 +408,7 @@
         </label>
       </div>
 
-      <hr />
+      <hr class="anchor" id="progress-bars" />
 
       <div class="h2">
         progress bars; classes used:
@@ -426,7 +454,7 @@
         </div>
       </div>
 
-      <hr />
+      <hr class="anchor" id="text-bg-colors" />
 
       <div class="h2">
         text and bg colors; classes used: <code>text-X, bg-X</code>
@@ -483,7 +511,7 @@
         eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat
         a,
       </div>
-<!--
+      <!--
         text-nowrap allows text to flow beyond the screen width... unpleasant...
       <div class="bg-info text-white text-nowrap">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -513,7 +541,7 @@
         world Hello world Hello world Hello world Hello world
       </div>
 
-      <hr />
+      <hr class="anchor" id="tables" />
 
       <div class="h2">
         tables; classes used:
@@ -621,7 +649,6 @@
         </tbody>
       </table>
 
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <table class="table table-striped table-inverse">
         <thead class="thead-default">
           <tr>
@@ -664,7 +691,7 @@
         </tbody>
       </table>
 
-      <hr />
+      <hr class="anchor" id="cards" />
 
       <div class="h2">
         cards; classes used:
@@ -832,7 +859,7 @@
         </div>
       </div>
 
-      <hr />
+      <hr class="anchor" id="forms" />
 
       <div class="h2">
         form; classes used:
@@ -856,7 +883,7 @@
         </form>
       </div>
 
-      <hr />
+      <hr class="anchor" id="dropdown" />
 
       <div class="h2">
         dropdown (requires jQuery); classes used:
@@ -884,150 +911,7 @@
         </div>
       </div>
 
-      <hr />
-
-      <div class="h2">
-        navigation (requires jQuery); classes used:
-        <code>nav, nav-pills, nav-link, nav-tabs, nav-fill, and more</code>
-      </div>
-
-      <div class="container">
-        <nav class="nav nav-pills">
-          <a href="#" class="nav-link">link 1</a>
-          <a href="#" class="nav-link">link 2</a>
-          <a href="#" class="nav-link active">link 3</a>
-          <a href="#" class="nav-link">link 4</a>
-        </nav>
-
-        <ul class="nav justify-content-end nav-tabs nav-fill">
-          <li class="nav-item">
-            <a href="#" class="nav-link active">link 1</a>
-          </li>
-          <li class="nav-item dropdown">
-            <button
-              type="button"
-              class="nav-link dropdown-toggle"
-              data-toggle="dropdown"
-            >
-              Drop Menu
-            </button>
-            <div class="dropdown-menu">
-              <h4 class="dropdown-header">select one from below</h4>
-              <a href="#" class="dropdown-item">Go Here</a>
-              <a href="#" class="dropdown-item disabled">Go There</a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">Go There</a>
-              <a href="#" class="dropdown-item">Go There</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">link 3</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link disabled">link 4</a>
-          </li>
-        </ul>
-      </div>
-
-      <hr />
-
-      <div class="h2">
-        more navigation (requires jQuery); classes used:
-        <code
-          >navbar, navbar-toggler, navbar-nav, nav-item, nav-link, and
-          more</code
-        >
-      </div>
-
-      <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#myNav2"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <a href="" class="navbar-brand">Logo</a>
-        <div class="collapse navbar-collapse" id="myNav2">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 1</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 2</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 3</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 4</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <hr />
-
-      <div class="h2">
-        even more navigation (requires jQuery); classes used:
-        <code
-          >navbar, sticky-top, navbar-toggler, navbar-collapse, navbar-nav,
-          nav-item, nav-link, and more</code
-        >
-      </div>
-
-      <nav class="navbar sticky-top navbar-dark navbar-expand-sm bg-info">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#myNav3"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <a href="" class="navbar-brand">Logo</a>
-        <div class="collapse navbar-collapse" id="myNav3">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 1</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 2</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 3</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 4</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="http://example.com"
-                id="navbarDropdownMenuLink2"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Dropdown link
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink2"
-              >
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <hr />
+      <hr class="anchor" id="alerts" />
 
       <div class="h2">
         alerts (requires jQuery); classes used:
@@ -1051,7 +935,7 @@
         <p>Welcome to my page</p>
       </div>
 
-      <hr />
+      <hr class="anchor" id="tooltips" />
 
       <div class="h2">
         tooltips (requires jQuery); classes used:
@@ -1078,7 +962,7 @@
         Tool tip shows hello world (click)
       </button>
 
-      <hr />
+      <hr class="anchor" id="collapse" />
 
       <div class="h2">
         collapse toggle (requires jQuery); classes used:
@@ -1118,7 +1002,7 @@
         <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
       </div>
 
-      <hr />
+      <hr class="anchor" id="modals" />
 
       <div class="h2">
         modals (requires jQuery); classes used:
@@ -1194,7 +1078,7 @@
         </div>
       </div>
 
-      <hr />
+      <hr class="anchor" id="carousel" />
 
       <div class="h2">
         carousel (requires jQuery); classes used:
@@ -1285,7 +1169,150 @@
           </div>
         </div>
       </div>
+
+      <hr class="anchor" id="navigation" />
+
+      <div class="h2">
+        navigation (requires jQuery); classes used:
+        <code>nav, nav-pills, nav-link, nav-tabs, nav-fill, and more</code>
+      </div>
+
+      <div class="container">
+        <nav class="nav nav-pills">
+          <a href="#" class="nav-link">link 1</a>
+          <a href="#" class="nav-link">link 2</a>
+          <a href="#" class="nav-link active">link 3</a>
+          <a href="#" class="nav-link">link</a>
+        </nav>
+
+        <ul class="nav justify-content-end nav-tabs nav-fill">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">link 1</a>
+          </li>
+          <li class="nav-item dropdown">
+            <button
+              type="button"
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+            >
+              Drop Menu
+            </button>
+            <div class="dropdown-menu">
+              <h4 class="dropdown-header">select one from below</h4>
+              <a href="#" class="dropdown-item">Go Here</a>
+              <a href="#" class="dropdown-item disabled">Go There</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Go There</a>
+              <a href="#" class="dropdown-item">Go There</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">link 3</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link disabled">link</a>
+          </li>
+        </ul>
+      </div>
+
       <hr />
+
+      <div class="h2">
+        more navigation (requires jQuery); classes used:
+        <code
+          >navbar, navbar-toggler, navbar-nav, nav-item, nav-link, and
+          more</code
+        >
+      </div>
+
+      <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#myNav2"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a href="" class="navbar-brand">Logo</a>
+        <div class="collapse navbar-collapse" id="myNav2">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="" class="nav-link">Link 1</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Link 2</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Link 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">link</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <hr />
+
+      <div class="h2">
+        even more navigation (requires jQuery); classes used:
+        <code
+          >navbar, sticky-top, navbar-toggler, navbar-collapse, navbar-nav,
+          nav-item, nav-link, and more</code
+        >
+      </div>
+
+      <nav class="navbar sticky-top navbar-dark navbar-expand-sm bg-info">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#myNav3"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a href="" class="navbar-brand">Logo</a>
+        <div class="collapse navbar-collapse" id="myNav3">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="" class="nav-link">Link 1</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Link 2</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Link 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="http://example.com"
+                id="navbarDropdownMenuLink2"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink2"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
       <hr />
       <hr />
       <hr />
