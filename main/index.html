@@ -791,7 +791,7 @@
         dropdown (requires jQuery); classes used:
         <code
           >dropdown, dropdown-toggle, dropdown-menu, dropdown-header,
-          dropdown-item and more</code
+          dropdown-item, and more</code
         >
       </div>
 
@@ -814,6 +814,52 @@
       </div>
 
       <hr />
+
+      <div class="h2">
+        navigation (requires jQuery); classes used:
+        <code
+          >nav, nav-pills, nav-link, nav-tabs, nav-fill, and more</code
+        >
+      </div>
+
+      <div class="container">
+        <nav class="nav nav-pills">
+          <a href="#" class="nav-link">link 1</a>
+          <a href="#" class="nav-link">link 2</a>
+          <a href="#" class="nav-link active">link 3</a>
+          <a href="#" class="nav-link">link 4</a>
+        </nav>
+
+        <ul class="nav justify-content-end nav-tabs nav-fill">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">link 1</a>
+          </li>
+          <li class="nav-item dropdown">
+            <button
+              type="button"
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+            >
+              Drop Menu
+            </button>
+            <div class="dropdown-menu">
+              <h4 class="dropdown-header">select one from below</h4>
+              <a href="#" class="dropdown-item">Go Here</a>
+              <a href="#" class="dropdown-item disabled">Go There</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Go There</a>
+              <a href="#" class="dropdown-item">Go There</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">link 3</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link disabled">link 4</a>
+          </li>
+        </ul>
+      </div>
+
       <hr />
       <hr />
       <hr />
