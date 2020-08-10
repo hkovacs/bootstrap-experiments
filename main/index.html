@@ -30,13 +30,13 @@
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#myNav"
+        data-target="#myNav1"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <a href="" class="navbar-brand">Logo</a>
-      <div class="collapse navbar-collapse" id="myNav">
+      <div class="collapse navbar-collapse" id="myNav1">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a href="" class="nav-link">Link 1</a>
@@ -54,14 +54,17 @@
             <a
               class="nav-link dropdown-toggle"
               href="http://example.com"
-              id="navbarDropdownMenuLink"
+              id="navbarDropdownMenuLink1"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
               Dropdown link
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <div
+              class="dropdown-menu"
+              aria-labelledby="navbarDropdownMenuLink1"
+            >
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
@@ -480,6 +483,8 @@
         eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat
         a,
       </div>
+<!--
+        text-nowrap allows text to flow beyond the screen width... unpleasant...
       <div class="bg-info text-white text-nowrap">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
         ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
@@ -493,6 +498,7 @@
         enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,Hello
         world Hello world Hello world Hello world Hello world
       </div>
+ -->
       <div class="bg-success text-white text-justify">
         HLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
         commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
@@ -532,16 +538,31 @@
             <td>1</td>
             <td>Laurence</td>
             <td>Svekis</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
           </tr>
           <tr>
             <td>2</td>
             <td>Mark</td>
             <td>Smith</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
           </tr>
           <tr>
             <td>3</td>
             <td>Mark</td>
             <td>Smith</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
           </tr>
         </tbody>
       </table>
@@ -657,6 +678,7 @@
         <img
           src="http://via.placeholder.com/350x150"
           class="img-fluid img-thumbnail"
+          alt="test image 1"
         />
         <div class="card-block">
           <div class="card-title h3">Title</div>
@@ -693,7 +715,10 @@
           </div>
           <div class="col">
             <div class="card">
-              <img src="http://via.placeholder.com/350x150" />
+              <img
+                src="http://via.placeholder.com/350x150"
+                alt="test image 1"
+              />
               <div class="card-img-overlay">
                 <div class="card-title h3">Title</div>
                 <div class="card-text">
@@ -794,7 +819,7 @@
           <div class="card-footer text-muted">footer</div>
         </div>
         <div class="card">
-          <img src="http://via.placeholder.com/350x150" />
+          <img src="http://via.placeholder.com/350x150" alt="test image 1" />
           <div class="card-img-overlay">
             <div class="card-title h3">Title</div>
             <div class="card-text">
@@ -919,13 +944,13 @@
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#myNav"
+          data-target="#myNav2"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <a href="" class="navbar-brand">Logo</a>
-        <div class="collapse navbar-collapse" id="myNav">
+        <div class="collapse navbar-collapse" id="myNav2">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a href="" class="nav-link">Link 1</a>
@@ -958,13 +983,13 @@
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#myNav"
+          data-target="#myNav3"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <a href="" class="navbar-brand">Logo</a>
-        <div class="collapse navbar-collapse" id="myNav">
+        <div class="collapse navbar-collapse" id="myNav3">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a href="" class="nav-link">Link 1</a>
@@ -982,7 +1007,7 @@
               <a
                 class="nav-link dropdown-toggle"
                 href="http://example.com"
-                id="navbarDropdownMenuLink"
+                id="navbarDropdownMenuLink2"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
@@ -991,7 +1016,7 @@
               </a>
               <div
                 class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
+                aria-labelledby="navbarDropdownMenuLink2"
               >
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
@@ -1168,9 +1193,98 @@
           </div>
         </div>
       </div>
-      
+
       <hr />
+
+      <div class="h2">
+        carousel (requires jQuery); classes used:
+        <code
+          >carousel, carousel-inner, carousel-item, carousel-control..., and
+          more</code
+        >
+      </div>
+
+      <div id="car1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="http://via.placeholder.com/1200x450"
+              class="img-fluid"
+              alt="test image 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="http://via.placeholder.com/1200x450"
+              class="img-fluid"
+              alt="test image 1"
+            />
+          </div>
+        </div>
+      </div>
+
       <hr />
+
+      <div id="car2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="http://via.placeholder.com/1200x450"
+              class="img-fluid"
+              alt="test image 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="http://via.placeholder.com/1200x450"
+              class="img-fluid"
+              alt="test image 1"
+            />
+          </div>
+        </div>
+        <a href="#car2" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="sr-only">previous</span>
+        </a>
+        <a href="#car2" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="sr-only">next</span>
+        </a>
+      </div>
+
+      <hr />
+
+      <div id="car3" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#car3" data-slide-to="0" class="active"></li>
+          <li data-target="#car3" data-slide-to="1"></li>
+          <li data-target="#car3" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="http://via.placeholder.com/1200x450"
+              class="img-fluid"
+              alt="test image 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="http://via.placeholder.com/1200x450"
+              class="img-fluid"
+              alt="test image 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="http://via.placeholder.com/1200x450"
+              class="img-fluid"
+              alt="test image 1"
+            />
+          </div>
+        </div>
+      </div>
       <hr />
       <hr />
       <hr />
