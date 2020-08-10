@@ -10,12 +10,14 @@
     />
 
     <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
       .row div {
         border: 1px solid black;
@@ -762,11 +764,8 @@
       <hr />
 
       <div class="h2">
-        forms; classes used:
-        <code
-          >form-group, form-control, form-control-label,
-          and more</code
-        >
+        form; classes used:
+        <code>form-group, form-control, form-control-label, and more</code>
       </div>
 
       <div class="container">
@@ -786,6 +785,47 @@
         </form>
       </div>
 
+      <hr />
+
+      <div class="h2">
+        dropdown (requires jQuery); classes used:
+        <code
+          >dropdown, dropdown-toggle, dropdown-menu, dropdown-header,
+          dropdown-item and more</code
+        >
+      </div>
+
+      <div class="dropdown">
+        <button
+          type="button"
+          class="btn btn-lg btn-primary dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          Drop Menu
+        </button>
+        <div class="dropdown-menu">
+          <h4 class="dropdown-header">select one from below</h4>
+          <a href="#" class="dropdown-item">Go Here</a>
+          <a href="#" class="dropdown-item disabled">Go There</a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">Go There</a>
+          <a href="#" class="dropdown-item">Go There</a>
+        </div>
+      </div>
+
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
       <hr />
       <hr />
       <hr />
