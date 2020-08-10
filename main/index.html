@@ -1054,7 +1054,121 @@
       </button>
 
       <hr />
+
+      <div class="h2">
+        collapse toggle (requires jQuery); classes used:
+        <code>collapse, and more</code>
+      </div>
+
+      <a href="#col1" class="btn btn-primary" data-toggle="collapse"
+        >Show #1
+      </a>
+      <a href="#col2" class="btn btn-primary" data-toggle="collapse"
+        >Show #2
+      </a>
+
+      <a href=".mcoll" class="btn btn-primary" data-toggle="collapse"
+        >Show Both
+      </a>
+
+      <div id="col2" class="collapse mcoll">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      </div>
+      <div id="col1" class="collapse mcoll">
+        <p>
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus.
+        </p>
+
+        <p>
+          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+        </p>
+
+        <p>Nulla consequat massa quis enim.</p>
+
+        <p>
+          Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+        </p>
+
+        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+      </div>
+
       <hr />
+
+      <div class="h2">
+        modals (requires jQuery); classes used:
+        <code
+          >modal, modal-dialog, modal-content, modal-header, modal-body,
+          modal-footer, modal-title, and more</code
+        >
+      </div>
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#myMod"
+      >
+        Open
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#myMod1"
+      >
+        Open
+      </button>
+      <div id="myMod" class="modal fade">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Title</h3>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>x</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Hello World
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                X
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="myMod1" class="modal fade">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Title</h3>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>x</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Hello World
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                X
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <hr />
       <hr />
       <hr />
