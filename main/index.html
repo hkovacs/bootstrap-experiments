@@ -1027,6 +1027,32 @@
       </div>
 
       <hr />
+
+      <div class="h2">
+        tooltips (requires jQuery); classes used:
+        <code>tooltip, and more</code>
+      </div>
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="hello world"
+      >
+        Tool tip shows hello world
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-warning"
+        data-toggle="popover"
+        data-placement="bottom"
+        data-content="hello world"
+      >
+        Tool tip shows hello world (click)
+      </button>
+
       <hr />
       <hr />
       <hr />
@@ -1040,5 +1066,12 @@
       <hr />
     </div>
     <!-- end of container -->
+
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
   </body>
 </html>
