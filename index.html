@@ -22,8 +22,23 @@
       .anchor {
         margin-bottom: 60px;
       }
+      .show-button {
+        margin-top: 20px;
+      }
       .row div {
         border: 1px solid black;
+      }
+      pre code {
+        background-color: #eee;
+        border: 1px solid #999;
+        display: block;
+        padding: 20px;
+        overflow: auto;
+        width: 100%;
+      }
+
+      #show-grid-layout-code-copy {
+        margin-top: 10px;
       }
     </style>
   </head>
@@ -107,46 +122,69 @@
         grid layout; classes used: <code>row, col, order, and more</code>
       </div>
       <!-- 3,2,4,1 -->
-      <div class="row">
-        <div class="col order-4">Col 1</div>
-        <div class="col order-2">Col 2</div>
-        <div class="col order-1">Col 3</div>
-        <div class="col order-3">Col 4</div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-2 ml-auto">Col 1</div>
-        <div class="col-sm-4 mr-auto">Col 2</div>
-      </div>
+      <div id="grid-layout-code">
+        <div class="row">
+          <div class="col order-4">Col 1</div>
+          <div class="col order-2">Col 2</div>
+          <div class="col order-1">Col 3</div>
+          <div class="col order-3">Col 4</div>
+        </div>
 
-      <div class="row">
-        <div class="col order-sm-2">Col 1</div>
-        <div class="col order-sm-9">Col 2</div>
-        <div class="col">Col 3</div>
-      </div>
+        <div class="row">
+          <div class="col-sm-2 ml-auto">Col 1</div>
+          <div class="col-sm-4 mr-auto">Col 2</div>
+        </div>
 
-      <div class="row no-gutters">
-        <div class="col">Col 1</div>
-        <div class="col">Col 2</div>
-        <div class="col">Col 3</div>
-        <div class="bg-primary w-100">Content</div>
-        <div class="col">Col 4</div>
-      </div>
+        <div class="row">
+          <div class="col order-sm-2">Col 1</div>
+          <div class="col order-sm-9">Col 2</div>
+          <div class="col">Col 3</div>
+        </div>
 
-      <div class="row">
-        <div class="col-sm-12">Col 1*</div>
-        <div class="col-sm-5">Col 2</div>
-        <div class="col-sm-5">Col 3</div>
+        <div class="row no-gutters">
+          <div class="col">Col 1</div>
+          <div class="col">Col 2</div>
+          <div class="col">Col 3</div>
+          <div class="bg-primary w-100">Content</div>
+          <div class="col">Col 4</div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">Col 1*</div>
+          <div class="col-sm-5">Col 2</div>
+          <div class="col-sm-5">Col 3</div>
+        </div>
+        <div class="row">
+          <div class="col-lg">Col 1</div>
+          <div class="col-md">Col 2</div>
+          <div class="col-xl">Col 3</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2 col-md col-lg-6">Col 1</div>
+          <div class="col-sm-8 col-md col-lg-4">Col 2</div>
+          <div class="col-sm-2 col-md col-lg-2">Col 3</div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-lg">Col 1</div>
-        <div class="col-md">Col 2</div>
-        <div class="col-xl">Col 3</div>
-      </div>
-      <div class="row">
-        <div class="col-sm-2 col-md col-lg-6">Col 1</div>
-        <div class="col-sm-8 col-md col-lg-4">Col 2</div>
-        <div class="col-sm-2 col-md col-lg-2">Col 3</div>
+      <!-- grid-layout-code -->
+
+      <a
+        href="#show-grid-layout-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show grid-layout code
+      </a>
+      <div id="show-grid-layout-code" class="collapse mcoll">
+        <button
+          onclick="copyCode('show-grid-layout-code-block')"
+          class="btn btn-info"
+          id="show-grid-layout-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-grid-layout-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr class="anchor" id="display" />
@@ -155,6 +193,7 @@
         display; classes used:
         <code>display, lead, blockquote, blockquote-footer</code>
       </div>
+
       <p class="display-4">My Heading</p>
 
       <p class="lead">
@@ -1323,9 +1362,23 @@
     <!-- end of container -->
 
     <script>
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-        $('[data-toggle="popover"]').popover();
+      function copyCode(codeId) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById(codeId));
+        window.getSelection().removeAllRanges(); // clear current selection
+        window.getSelection().addRange(range); // to select text
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges(); // to deselect
+        alert("Code copied");
+      }
+
+      $(document).ready(function () {
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip();
+          $('[data-toggle="popover"]').popover();
+        });
+
+        $("#show-grid-layout-code-block").text($("#grid-layout-code").html());
       });
     </script>
   </body>
