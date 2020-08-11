@@ -37,7 +37,7 @@
         width: 100%;
       }
 
-      #show-grid-layout-code-copy {
+      .code-copy-button {
         margin-top: 10px;
       }
     </style>
@@ -172,9 +172,9 @@
         href="#show-grid-layout-code"
         class="btn btn-primary show-button"
         data-toggle="collapse"
-        >show grid-layout code
+        >show grid layout code
       </a>
-      <div id="show-grid-layout-code" class="collapse mcoll">
+      <div id="show-grid-layout-code" class="collapse mcoll code-copy-button">
         <button
           onclick="copyCode('show-grid-layout-code-block')"
           class="btn btn-info"
@@ -194,63 +194,107 @@
         <code>display, lead, blockquote, blockquote-footer</code>
       </div>
 
-      <p class="display-4">My Heading</p>
+      <div id="display-code">
+        <p class="display-4">My Heading</p>
 
-      <p class="lead">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus.
-      </p>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus.
+        </p>
 
-      <p>
-        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-        Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-        aliquet nec, vulputate eget, arcu.
-      </p>
+        <p>
+          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+          aliquet nec, vulputate eget, arcu.
+        </p>
 
-      <p>
-        In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
-        dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
-        Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
-        leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam
-        lorem ante, dapibus in, viverra quis, feugiat a,
-      </p>
+        <p>
+          In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
+          dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+          Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+          Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+          Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+        </p>
 
-      <blockquote class="blockquote">
-        Content sem. Nulla consequat massa quis enim. Donec pede justo,
-        <footer class="blockquote-footer">name</footer>
-      </blockquote>
+        <blockquote class="blockquote">
+          Content sem. Nulla consequat massa quis enim. Donec pede justo,
+          <footer class="blockquote-footer">name</footer>
+        </blockquote>
+      </div>
+      <!-- display-code -->
+
+      <a
+        href="#show-display-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show display code
+      </a>
+      <div id="show-display-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-display-code-block')"
+          class="btn btn-info"
+          id="show-display-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-display-code-block">code goes here</code>
+        </pre>
+      </div>
 
       <hr class="anchor" id="lists" />
 
       <div class="h2">
         lists; classes used: <code>list-group, list-group-item, and more</code>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus.
-      </p>
+      <div id="lists-code">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus.
+        </p>
 
-      <div class="list-group">
-        <a class="list-group-item active">One</a>
-        <a class="list-group-item text-truncate"
-          >Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-        </a>
+        <div class="list-group">
+          <a class="list-group-item active">One</a>
+          <a class="list-group-item text-truncate"
+            >Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+          </a>
+        </div>
+
+        <ul class="list-group">
+          <li class="list-group-item active">One</li>
+          <li class="list-group-item disabled">Two</li>
+          <li
+            class="list-group-item list-group-item-primary list-group-item-action"
+          >
+            Three
+          </li>
+          <li class="list-group-item list-group-item-action">Three</li>
+          <li class="list-group-item list-group-item-action">Three</li>
+          <li class="list-group-item list-group-item-success">Three</li>
+        </ul>
       </div>
+      <!-- lists-code -->
 
-      <ul class="list-group">
-        <li class="list-group-item active">One</li>
-        <li class="list-group-item disabled">Two</li>
-        <li
-          class="list-group-item list-group-item-primary list-group-item-action"
+      <a
+        href="#show-lists-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show lists code
+      </a>
+      <div id="show-lists-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-lists-code-block')"
+          class="btn btn-info"
+          id="show-lists-code-copy"
         >
-          Three
-        </li>
-        <li class="list-group-item list-group-item-action">Three</li>
-        <li class="list-group-item list-group-item-action">Three</li>
-        <li class="list-group-item list-group-item-success">Three</li>
-      </ul>
+          Copy code
+        </button>
+        <pre>
+        <code contentEditable id="show-lists-code-block">code goes here</code>
+      </pre>
+      </div>
 
       <hr class="anchor" id="jumbotron" />
 
@@ -261,60 +305,83 @@
           more</code
         >
       </div>
-      <div class="jumbotron">
-        <div class="h1">Heading</div>
-        <p class="lead">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor
-        </p>
-        <hr class="my-5" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor
-        </p>
-        <hr class="my-1" />
-      </div>
-      <div class="row">
-        <div class="col">
-          <p class="display-4">My Heading</p>
-          <p>
-            <span class="badge badge-pill badge-danger">Lorem ipsum</span> dolor
-            sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-            dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-            <img
-              src="http://via.placeholder.com/650x250"
-              class="img-fluid float-right"
-              alt="test image 1"
-            />
-            parturient montes, nascetur ridiculus mus.
+      <div id="jumbotron-code">
+        <div class="jumbotron">
+          <div class="h1">Heading</div>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor
           </p>
-        </div>
-        <div class="col">
+          <hr class="my-5" />
           <p>
-            <span class="badge badge-default">Default</span>
-            <span class="badge badge-primary">Primary</span>
-            <span class="badge badge-success">Success</span>
-            <span class="badge badge-info">Info</span>
-            <span class="badge badge-warning">Warning</span>
-            <span class="badge badge-danger">Danger</span>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor
           </p>
+          <hr class="my-1" />
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="display-4">My Heading</p>
+            <p>
+              <span class="badge badge-pill badge-danger">Lorem ipsum</span>
+              dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+              ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+              magnis dis
+              <img
+                src="http://via.placeholder.com/650x250"
+                class="img-fluid float-right"
+                alt="test image 1"
+              />
+              parturient montes, nascetur ridiculus mus.
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              <span class="badge badge-default">Default</span>
+              <span class="badge badge-primary">Primary</span>
+              <span class="badge badge-success">Success</span>
+              <span class="badge badge-info">Info</span>
+              <span class="badge badge-warning">Warning</span>
+              <span class="badge badge-danger">Danger</span>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="list-group">
+              <li class="list-group-item active">One</li>
+              <li class="list-group-item disabled">Two</li>
+              <li
+                class="list-group-item list-group-item-primary list-group-item-action"
+              >
+                Three
+              </li>
+              <li class="list-group-item list-group-item-action">Three</li>
+              <li class="list-group-item list-group-item-action">Three</li>
+              <li class="list-group-item list-group-item-success">Three</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <ul class="list-group">
-            <li class="list-group-item active">One</li>
-            <li class="list-group-item disabled">Two</li>
-            <li
-              class="list-group-item list-group-item-primary list-group-item-action"
-            >
-              Three
-            </li>
-            <li class="list-group-item list-group-item-action">Three</li>
-            <li class="list-group-item list-group-item-action">Three</li>
-            <li class="list-group-item list-group-item-success">Three</li>
-          </ul>
-        </div>
+      <!-- jumbotron-code -->
+
+      <a
+        href="#show-jumbotron-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show jumbotron code
+      </a>
+      <div id="show-jumbotron-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-jumbotron-code-block')"
+          class="btn btn-info"
+          id="show-jumbotron-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-jumbotron-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr class="anchor" id="buttons" />
@@ -324,63 +391,34 @@
         <code>btn, btn-toolbar, btn-outline, btn-group, and more</code>
       </div>
 
-      <button type="button" class="btn btn-primary">Click Me</button>
-      <button type="button" class="btn btn-secondary">Click Me</button>
-      <button type="button" class="btn btn-success">Click Me</button>
-      <button type="button" class="btn btn-warning">Click Me</button>
-      <button type="button" class="btn btn-info">Click Me</button>
-      <button type="button" class="btn btn-light">Click Me</button>
-      <button type="button" class="btn btn-dark">Click Me</button>
-      <button type="button" class="btn btn-link">Click Me</button>
-      <button type="button" class="btn btn-danger">Click Me</button>
-      <div class="btn btn-primary">Click</div>
-      <a href="" class="btn btn-primary">Click</a>
-
-      <a href="" class="btn btn-outline-primary">Click</a>
-      <a href="" class="btn btn-outline-secondary">Click</a>
-      <a href="" class="btn btn-outline-success">Click</a>
-      <a href="" class="btn btn-outline-info">Click</a>
-      <a href="" class="btn btn-outline-warning">Click</a>
-      <a href="" class="btn btn-outline-danger">Click</a>
-
-      <a href="" class="btn btn-primary btn-lg">Click</a>
-      <a href="" class="btn btn-primary btn-sm">Click</a>
-
-      <a href="" class="btn btn-primary btn-block">Click</a>
-      <button type="button" class="btn btn-primary active">Click Me</button>
-
-      <a href="" class="btn btn-primary disabled">Click</a>
-
-      <div class="btn-group" role="group">
+      <div id="buttons-code">
+        <button type="button" class="btn btn-primary">Click Me</button>
+        <button type="button" class="btn btn-secondary">Click Me</button>
+        <button type="button" class="btn btn-success">Click Me</button>
+        <button type="button" class="btn btn-warning">Click Me</button>
         <button type="button" class="btn btn-info">Click Me</button>
-        <div class="btn-group" role="group">
-          <button type="button" class="btn btn-info">Click Me</button>
-          <button type="button" class="btn btn-light">Click Me</button>
-          <button type="button" class="btn btn-dark">Click Me</button>
-        </div>
         <button type="button" class="btn btn-light">Click Me</button>
         <button type="button" class="btn btn-dark">Click Me</button>
-      </div>
-      <div class="btn-group btn-group-lg" role="group">
-        <button type="button" class="btn btn-primary">Click Me</button>
+        <button type="button" class="btn btn-link">Click Me</button>
         <button type="button" class="btn btn-danger">Click Me</button>
-      </div>
-      <div class="btn-group btn-group-sm" role="group">
-        <button type="button" class="btn btn-primary">Click Me</button>
-        <button type="button" class="btn btn-danger">Click Me</button>
-      </div>
+        <div class="btn btn-primary">Click</div>
+        <a href="" class="btn btn-primary">Click</a>
 
-      <div class="btn-group btn-group-vertical" role="group">
-        <button type="button" class="btn btn-primary">Click Me</button>
-        <button type="button" class="btn btn-danger">Click Me</button>
-      </div>
+        <a href="" class="btn btn-outline-primary">Click</a>
+        <a href="" class="btn btn-outline-secondary">Click</a>
+        <a href="" class="btn btn-outline-success">Click</a>
+        <a href="" class="btn btn-outline-info">Click</a>
+        <a href="" class="btn btn-outline-warning">Click</a>
+        <a href="" class="btn btn-outline-danger">Click</a>
 
-      <div class="btn-group btn-group-vertical" role="group">
-        <button type="button" class="btn btn-primary">Click Me</button>
-        <button type="button" class="btn btn-danger">Click Me</button>
-      </div>
+        <a href="" class="btn btn-primary btn-lg">Click</a>
+        <a href="" class="btn btn-primary btn-sm">Click</a>
 
-      <div class="btn-toolbar">
+        <a href="" class="btn btn-primary btn-block">Click</a>
+        <button type="button" class="btn btn-primary active">Click Me</button>
+
+        <a href="" class="btn btn-primary disabled">Click</a>
+
         <div class="btn-group" role="group">
           <button type="button" class="btn btn-info">Click Me</button>
           <div class="btn-group" role="group">
@@ -388,9 +426,97 @@
             <button type="button" class="btn btn-light">Click Me</button>
             <button type="button" class="btn btn-dark">Click Me</button>
           </div>
+          <button type="button" class="btn btn-light">Click Me</button>
+          <button type="button" class="btn btn-dark">Click Me</button>
+        </div>
+        <div class="btn-group btn-group-lg" role="group">
+          <button type="button" class="btn btn-primary">Click Me</button>
+          <button type="button" class="btn btn-danger">Click Me</button>
+        </div>
+        <div class="btn-group btn-group-sm" role="group">
+          <button type="button" class="btn btn-primary">Click Me</button>
+          <button type="button" class="btn btn-danger">Click Me</button>
         </div>
 
-        <div class="btn-group" data-toggle="buttons">
+        <div class="btn-group btn-group-vertical" role="group">
+          <button type="button" class="btn btn-primary">Click Me</button>
+          <button type="button" class="btn btn-danger">Click Me</button>
+        </div>
+
+        <div class="btn-group btn-group-vertical" role="group">
+          <button type="button" class="btn btn-primary">Click Me</button>
+          <button type="button" class="btn btn-danger">Click Me</button>
+        </div>
+
+        <div class="btn-toolbar">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-info">Click Me</button>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-info">Click Me</button>
+              <button type="button" class="btn btn-light">Click Me</button>
+              <button type="button" class="btn btn-dark">Click Me</button>
+            </div>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input type="checkbox" checked /> Check 1
+            </label>
+            <label class="btn btn-primary">
+              <input type="checkbox" /> Check 2
+            </label>
+            <label class="btn btn-primary">
+              <input type="checkbox" /> Check 3
+            </label>
+          </div>
+
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input type="radio" name="radioOne" id="radioOne1" checked />
+              Check 1
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="radioOne" id="radioOne2" /> Check 2
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="radioOne" id="radioOne3" /> Check 3
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- buttons-code -->
+
+      <a
+        href="#show-buttons-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show buttons code
+      </a>
+      <div id="show-buttons-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-buttons-code-block')"
+          class="btn btn-info"
+          id="show-buttons-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-buttons-code-block">code goes here</code>
+        </pre>
+      </div>
+
+      <hr class="anchor" id="radio-checkboxes" />
+
+      <div class="h2">
+        radio and checkboxes; classes used:
+        <code>btn, btn-group, btn-group-vertical, and more</code>
+      </div>
+
+      <div id="radio-checkboxes-code">
+        <div
+          class="btn-group btn-group-vertical btn-group-lg"
+          data-toggle="buttons"
+        >
           <label class="btn btn-primary active">
             <input type="checkbox" checked /> Check 1
           </label>
@@ -403,48 +529,36 @@
         </div>
 
         <div class="btn-group" data-toggle="buttons">
-          <label class="btn btn-primary active">
-            <input type="radio" name="radioOne" id="radioOne1" checked /> Check
-            1
+          <label class="btn btn-danger active">
+            <input type="radio" name="radioTwo" id="radioTwo1" checked />Yes
           </label>
-          <label class="btn btn-primary">
-            <input type="radio" name="radioOne" id="radioOne2" /> Check 2
-          </label>
-          <label class="btn btn-primary">
-            <input type="radio" name="radioOne" id="radioOne3" /> Check 3
+          <label class="btn btn-danger">
+            <input type="radio" name="radioTwo" id="radioTwo2" /> No
           </label>
         </div>
       </div>
+      <!-- radio-checkboxes-code -->
 
-      <hr class="anchor" id="radio-checkboxes" />
-
-      <div class="h2">
-        radio and checkboxes; classes used:
-        <code>btn, btn-group, btn-group-vertical, and more</code>
-      </div>
-
+      <a
+        href="#show-radio-checkboxes-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show radio and checkboxes code
+      </a>
       <div
-        class="btn-group btn-group-vertical btn-group-lg"
-        data-toggle="buttons"
+        id="show-radio-checkboxes-code"
+        class="collapse mcoll code-copy-button"
       >
-        <label class="btn btn-primary active">
-          <input type="checkbox" checked /> Check 1
-        </label>
-        <label class="btn btn-primary">
-          <input type="checkbox" /> Check 2
-        </label>
-        <label class="btn btn-primary">
-          <input type="checkbox" /> Check 3
-        </label>
-      </div>
-
-      <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-danger active">
-          <input type="radio" name="radioTwo" id="radioTwo1" checked />Yes
-        </label>
-        <label class="btn btn-danger">
-          <input type="radio" name="radioTwo" id="radioTwo2" /> No
-        </label>
+        <button
+          onclick="copyCode('show-radio-checkboxes-code-block')"
+          class="btn btn-info"
+          id="show-radio-checkboxes-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-radio-checkboxes-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr class="anchor" id="progress-bars" />
@@ -454,43 +568,69 @@
         <code>progress, progress-bar, and more</code>
       </div>
 
-      <div class="progress">
-        <div
-          class="progress-bar w-50 bg-success"
-          role="progressbar"
-          style="height: 25px;"
-        >
-          50%
+      <div id="progress-bars-code">
+        <div class="progress">
+          <div
+            class="progress-bar w-50 bg-success"
+            role="progressbar"
+            style="height: 25px;"
+          >
+            50%
+          </div>
+          <div
+            class="progress-bar w-50 bg-warning"
+            role="progressbar"
+            style="height: 25px;"
+          >
+            50%
+          </div>
         </div>
-        <div
-          class="progress-bar w-50 bg-warning"
-          role="progressbar"
-          style="height: 25px;"
-        >
-          50%
+        <div class="progress">
+          <div
+            class="progress-bar w-50 bg-danger progress-bar-striped"
+            role="progressbar"
+            style="height: 75px;"
+          >
+            50%
+          </div>
+          <div
+            class="progress-bar w-50"
+            role="progressbar"
+            style="height: 25px;"
+          >
+            50%
+          </div>
         </div>
-      </div>
-      <div class="progress">
-        <div
-          class="progress-bar w-50 bg-danger progress-bar-striped"
-          role="progressbar"
-          style="height: 75px;"
-        >
-          50%
-        </div>
-        <div class="progress-bar w-50" role="progressbar" style="height: 25px;">
-          50%
-        </div>
-      </div>
 
-      <div class="progress">
-        <div
-          class="progress-bar w-50 bg-danger progress-bar-striped progress-bar-animated"
-          role="progressbar"
-          style="height: 75px;"
-        >
-          50%
+        <div class="progress">
+          <div
+            class="progress-bar w-50 bg-danger progress-bar-striped progress-bar-animated"
+            role="progressbar"
+            style="height: 75px;"
+          >
+            50%
+          </div>
         </div>
+      </div>
+      <!-- progress-bars-code -->
+
+      <a
+        href="#show-progress-bars-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show progress bars code
+      </a>
+      <div id="show-progress-bars-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-progress-bars-code-block')"
+          class="btn btn-info"
+          id="show-progress-bars-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-progress-bars-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr class="anchor" id="text-bg-colors" />
@@ -499,18 +639,43 @@
         text and bg colors; classes used: <code>text-X, bg-X</code>
       </div>
 
-      <div class="text-primary">Hello world</div>
-      <div class="text-mute">Hello world</div>
-      <div class="text-success">Hello world</div>
-      <div class="text-info">Hello world</div>
-      <div class="text-danger">Hello world</div>
-      <div class="text-warning">Hello world</div>
-      <div class="bg-primary text-white">Hello world</div>
-      <div class="bg-success text-white">Hello world</div>
-      <div class="bg-info text-white">Hello world</div>
-      <div class="bg-danger text-white">Hello world</div>
-      <div class="bg-warning text-white">Hello world</div>
-      <div class="bg-faded text-white">Hello world</div>
+      <div id="text-bg-colors-code">
+        <div class="text-primary">Hello world</div>
+        <div class="text-mute">Hello world</div>
+        <div class="text-success">Hello world</div>
+        <div class="text-info">Hello world</div>
+        <div class="text-danger">Hello world</div>
+        <div class="text-warning">Hello world</div>
+        <div class="bg-primary text-white">Hello world</div>
+        <div class="bg-success text-white">Hello world</div>
+        <div class="bg-info text-white">Hello world</div>
+        <div class="bg-danger text-white">Hello world</div>
+        <div class="bg-warning text-white">Hello world</div>
+        <div class="bg-faded text-white">Hello world</div>
+      </div>
+      <!-- text-bg-colors-code -->
+
+      <a
+        href="#show-text-bg-colors-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show text and bg colors code
+      </a>
+      <div
+        id="show-text-bg-colors-code"
+        class="collapse mcoll code-copy-button"
+      >
+        <button
+          onclick="copyCode('show-text-bg-colors-code-block')"
+          class="btn btn-info"
+          id="show-text-bg-colors-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-text-bg-colors-code-block">code goes here</code>
+        </pre>
+      </div>
 
       <hr />
 
@@ -519,38 +684,39 @@
         <code>text-X, bg-X, and more</code>
       </div>
 
-      <div class="text-primary text-hide">Hello world</div>
-      <div class="text-mute">Hello world</div>
-      <div class="text-success text-capitalize">Hello world</div>
-      <div class="text-info text-uppercase text-sm-center">Hello world</div>
-      <div class="text-danger text-lowercase">Hello world</div>
-      <div class="text-warning text-center">Hello world</div>
-      <div class="bg-primary w-25 d-inline-block text-white">Hello world</div>
-      <div class="bg-success w-25 d-inline-block text-white">Hello world</div>
-      <div class="bg-info w-25 d-inline-block text-white">Hello world</div>
-      <div class="bg-danger text-white">Hello world</div>
-      <div class="bg-warning text-white">Hello world</div>
-      <div class="bg-faded text-danger">Hello world</div>
+      <div id="more-text-bg-colors-code">
+        <div class="text-primary text-hide">Hello world</div>
+        <div class="text-mute">Hello world</div>
+        <div class="text-success text-capitalize">Hello world</div>
+        <div class="text-info text-uppercase text-sm-center">Hello world</div>
+        <div class="text-danger text-lowercase">Hello world</div>
+        <div class="text-warning text-center">Hello world</div>
+        <div class="bg-primary w-25 d-inline-block text-white">Hello world</div>
+        <div class="bg-success w-25 d-inline-block text-white">Hello world</div>
+        <div class="bg-info w-25 d-inline-block text-white">Hello world</div>
+        <div class="bg-danger text-white">Hello world</div>
+        <div class="bg-warning text-white">Hello world</div>
+        <div class="bg-faded text-danger">Hello world</div>
 
-      <div class="bg-primary text-white">
-        Lorem ipsum dolor sit amet,
-        <span class="font-weight-bold font-italic"
-          >consectetuer adipiscing elit.</span
-        >
-        Aenean commodo ligula eget dolor.
-        <span class="d-block font-weight-bold">HELLO WORLD</span>
-        <span class="d-block">HELLO WORLD</span>Aenean massa. Cum sociis natoque
-        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-        consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-        vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
-        vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
-        tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
-        eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
-        eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat
-        a,
-      </div>
-      <!--
+        <div class="bg-primary text-white">
+          Lorem ipsum dolor sit amet,
+          <span class="font-weight-bold font-italic"
+            >consectetuer adipiscing elit.</span
+          >
+          Aenean commodo ligula eget dolor.
+          <span class="d-block font-weight-bold">HELLO WORLD</span>
+          <span class="d-block">HELLO WORLD</span>Aenean massa. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+          sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+          aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+          imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+          mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+          semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+          porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+          dapibus in, viverra quis, feugiat a,
+        </div>
+        <!--
         text-nowrap allows text to flow beyond the screen width... unpleasant...
       <div class="bg-info text-white text-nowrap">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -566,18 +732,43 @@
         world Hello world Hello world Hello world Hello world
       </div>
  -->
-      <div class="bg-success text-white text-justify">
-        HLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-        commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-        magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-        quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-        Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
-        dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-        enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,ld Hello
-        world Hello world Hello world Hello world Hello world
+        <div class="bg-success text-white text-justify">
+          HLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+          nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+          venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+          Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+          vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
+          vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra
+          quis, feugiat a,ld Hello world Hello world Hello world Hello world
+          Hello world
+        </div>
+      </div>
+      <!-- more-text-bg-colors-code -->
+
+      <a
+        href="#show-more-text-bg-colors-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show more text and bg colors code
+      </a>
+      <div
+        id="show-more-text-bg-colors-code"
+        class="collapse mcoll code-copy-button"
+      >
+        <button
+          onclick="copyCode('show-more-text-bg-colors-code-block')"
+          class="btn btn-info"
+          id="show-more-text-bg-colors-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-more-text-bg-colors-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr class="anchor" id="tables" />
@@ -587,148 +778,236 @@
         <code>table, table-responsive, table-hover, and more</code>
       </div>
 
-      <table class="table table-responsive">
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Last Name</th>
-            <th>Last Name</th>
-            <th>Last Name</th>
-            <th>Last Name</th>
-            <th>Last Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Laurence</td>
-            <td>Svekis</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Mark</td>
-            <td>Smith</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Mark</td>
-            <td>Smith</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="tables-1-code">
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Last Name</th>
+              <th>Last Name</th>
+              <th>Last Name</th>
+              <th>Last Name</th>
+              <th>Last Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Laurence</td>
+              <td>Svekis</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mark</td>
+              <td>Smith</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Mark</td>
+              <td>Smith</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- tables-1-code -->
 
-      <table class="table table-sm table-hover">
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="table-primary">
-            <td>1</td>
-            <td class="bg-primary">Laurence</td>
-            <td>Svekis</td>
-          </tr>
-          <tr class="table-success">
-            <td>2</td>
-            <td>Mark</td>
-            <td>Smith</td>
-          </tr>
-          <tr class="table-danger">
-            <td>3</td>
-            <td>Mark</td>
-            <td>Smith</td>
-          </tr>
-        </tbody>
-      </table>
+      <a
+        href="#show-tables-1-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show tables 1 code
+      </a>
+      <div id="show-tables-1-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-tables-1-code-block')"
+          class="btn btn-info"
+          id="show-tables-1-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+        <code contentEditable id="show-tables-1-code-block">code goes here</code>
+      </pre>
+      </div>
 
-      <table class="table table-bordered table-hover">
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Laurence</td>
-            <td>Svekis</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Mark</td>
-            <td>Smith</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Mark</td>
-            <td>Smith</td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="tables-2-code">
+        <table class="table table-sm table-hover">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-primary">
+              <td>1</td>
+              <td class="bg-primary">Laurence</td>
+              <td>Svekis</td>
+            </tr>
+            <tr class="table-success">
+              <td>2</td>
+              <td>Mark</td>
+              <td>Smith</td>
+            </tr>
+            <tr class="table-danger">
+              <td>3</td>
+              <td>Mark</td>
+              <td>Smith</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- tables-2-code -->
 
-      <table class="table table-striped table-inverse">
-        <thead class="thead-default">
-          <tr>
-            <th>Rank</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Laurence</td>
-            <td>Svekis</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Mark</td>
-            <td>Smith</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Mark</td>
-            <td>Smith</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Mark</td>
-            <td>Smith</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Mark</td>
-            <td>Smith</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>Mark</td>
-            <td>Smith</td>
-          </tr>
-        </tbody>
-      </table>
+      <a
+        href="#show-tables-2-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show table 2 code
+      </a>
+      <div id="show-tables-2-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-tables-2-code-block')"
+          class="btn btn-info"
+          id="show-tables-2-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+        <code contentEditable id="show-tables-2-code-block">code goes here</code>
+      </pre>
+      </div>
+
+      <div id="tables-3-code">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Laurence</td>
+              <td>Svekis</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mark</td>
+              <td>Smith</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Mark</td>
+              <td>Smith</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- tables-3-code -->
+
+      <a
+        href="#show-tables-3-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show tables 3 code
+      </a>
+      <div id="show-tables-3-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-tables-3-code-block')"
+          class="btn btn-info"
+          id="show-tables-3-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-tables-3-code-block">code goes here</code>
+        </pre>
+      </div>
+
+      <div id="tables-4-code">
+        <table class="table table-striped table-inverse">
+          <thead class="thead-default">
+            <tr>
+              <th>Rank</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Laurence</td>
+              <td>Svekis</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mark</td>
+              <td>Smith</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Mark</td>
+              <td>Smith</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Mark</td>
+              <td>Smith</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Mark</td>
+              <td>Smith</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Mark</td>
+              <td>Smith</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- tables-4-code -->
+
+      <a
+        href="#show-tables-4-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show tables 4 code
+      </a>
+      <div id="show-tables-4-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-tables-4-code-block')"
+          class="btn btn-info"
+          id="show-tables-4-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-tables-4-code-block">code goes here</code>
+        </pre>
+      </div>
 
       <hr class="anchor" id="cards" />
 
@@ -740,162 +1019,189 @@
         >
       </div>
 
-      <div class="card w-50">
-        <img
-          src="http://via.placeholder.com/350x150"
-          class="img-fluid img-thumbnail"
-          alt="test image 1"
-        />
-        <div class="card-block">
-          <div class="card-title h3">Title</div>
-          <div class="card-text">Hello world text</div>
+      <div id="cards-code">
+        <div class="card w-50">
+          <img
+            src="http://via.placeholder.com/350x150"
+            class="img-fluid img-thumbnail"
+            alt="test image 1"
+          />
+          <div class="card-block">
+            <div class="card-title h3">Title</div>
+            <div class="card-text">Hello world text</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-block">Lorem ipsum dolor</div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card text-center">
+                <div class="card-header h2">Header</div>
+                <div class="card-block">
+                  <div class="card-title h3">Title</div>
+                  <div class="card-text">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                      natoque penatibus et magnis dis parturient montes,
+                      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                      pellentesque eu, pretium
+                    </p>
+                    <a href="" class="btn btn-primary">Click</a>
+                  </div>
+                </div>
+                <div class="card-footer text-muted">footer</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="http://via.placeholder.com/350x150"
+                  alt="test image 1"
+                />
+                <div class="card-img-overlay">
+                  <div class="card-title h3">Title</div>
+                  <div class="card-text">
+                    Lorem ipsum dolor sit amet,
+
+                    <a href="" class="btn btn-primary">Click</a>
+                  </div>
+                </div>
+                <div class="card-footer text-muted">footer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-columns">
+          <div class="card">
+            <div class="card-block">Lorem ipsum dolor</div>
+          </div>
+
+          <div class="card text-center">
+            <div class="card-header h2">Header</div>
+            <div class="card-block">
+              <div class="card-title h3">Title</div>
+              <div class="card-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                  eu, pretium
+                </p>
+                <a href="" class="btn btn-primary">Click</a>
+              </div>
+            </div>
+            <div class="card-footer text-muted">footer</div>
+          </div>
+          <div class="card text-center">
+            <div class="card-header h2">Header</div>
+            <div class="card-block">
+              <div class="card-title h3">Title</div>
+              <div class="card-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                  eu, pretium
+                </p>
+                <a href="" class="btn btn-primary">Click</a>
+              </div>
+            </div>
+            <div class="card-footer text-muted">footer</div>
+          </div>
+          <div class="card text-center">
+            <div class="card-header h2">Header</div>
+            <div class="card-block">
+              <div class="card-title h3">Title</div>
+              <div class="card-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                  eu, pretium
+                </p>
+                <a href="" class="btn btn-primary">Click</a>
+              </div>
+            </div>
+            <div class="card-footer text-muted">footer</div>
+          </div>
+          <div class="card text-center">
+            <div class="card-header h2">Header</div>
+            <div class="card-block">
+              <div class="card-title h3">Title</div>
+              <div class="card-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                  eu, pretium
+                </p>
+                <a href="" class="btn btn-primary">Click</a>
+              </div>
+            </div>
+            <div class="card-footer text-muted">footer</div>
+          </div>
+          <div class="card text-center">
+            <div class="card-header h2">Header</div>
+            <div class="card-block">
+              <div class="card-title h3">Title</div>
+              <div class="card-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                  eu, pretium
+                </p>
+                <a href="" class="btn btn-primary">Click</a>
+              </div>
+            </div>
+            <div class="card-footer text-muted">footer</div>
+          </div>
+          <div class="card">
+            <img src="http://via.placeholder.com/350x150" alt="test image 1" />
+            <div class="card-img-overlay">
+              <div class="card-title h3">Title</div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet,
+
+                <a href="" class="btn btn-primary">Click</a>
+              </div>
+            </div>
+            <div class="card-footer text-muted">footer</div>
+          </div>
         </div>
       </div>
+      <!-- cards-code -->
 
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <div class="card-block">Lorem ipsum dolor</div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card text-center">
-              <div class="card-header h2">Header</div>
-              <div class="card-block">
-                <div class="card-title h3">Title</div>
-                <div class="card-text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                    natoque penatibus et magnis dis parturient montes, nascetur
-                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                    eu, pretium
-                  </p>
-                  <a href="" class="btn btn-primary">Click</a>
-                </div>
-              </div>
-              <div class="card-footer text-muted">footer</div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="http://via.placeholder.com/350x150"
-                alt="test image 1"
-              />
-              <div class="card-img-overlay">
-                <div class="card-title h3">Title</div>
-                <div class="card-text">
-                  Lorem ipsum dolor sit amet,
-
-                  <a href="" class="btn btn-primary">Click</a>
-                </div>
-              </div>
-              <div class="card-footer text-muted">footer</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-columns">
-        <div class="card">
-          <div class="card-block">Lorem ipsum dolor</div>
-        </div>
-
-        <div class="card text-center">
-          <div class="card-header h2">Header</div>
-          <div class="card-block">
-            <div class="card-title h3">Title</div>
-            <div class="card-text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-              </p>
-              <a href="" class="btn btn-primary">Click</a>
-            </div>
-          </div>
-          <div class="card-footer text-muted">footer</div>
-        </div>
-        <div class="card text-center">
-          <div class="card-header h2">Header</div>
-          <div class="card-block">
-            <div class="card-title h3">Title</div>
-            <div class="card-text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-              </p>
-              <a href="" class="btn btn-primary">Click</a>
-            </div>
-          </div>
-          <div class="card-footer text-muted">footer</div>
-        </div>
-        <div class="card text-center">
-          <div class="card-header h2">Header</div>
-          <div class="card-block">
-            <div class="card-title h3">Title</div>
-            <div class="card-text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-              </p>
-              <a href="" class="btn btn-primary">Click</a>
-            </div>
-          </div>
-          <div class="card-footer text-muted">footer</div>
-        </div>
-        <div class="card text-center">
-          <div class="card-header h2">Header</div>
-          <div class="card-block">
-            <div class="card-title h3">Title</div>
-            <div class="card-text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-              </p>
-              <a href="" class="btn btn-primary">Click</a>
-            </div>
-          </div>
-          <div class="card-footer text-muted">footer</div>
-        </div>
-        <div class="card text-center">
-          <div class="card-header h2">Header</div>
-          <div class="card-block">
-            <div class="card-title h3">Title</div>
-            <div class="card-text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-              </p>
-              <a href="" class="btn btn-primary">Click</a>
-            </div>
-          </div>
-          <div class="card-footer text-muted">footer</div>
-        </div>
-        <div class="card">
-          <img src="http://via.placeholder.com/350x150" alt="test image 1" />
-          <div class="card-img-overlay">
-            <div class="card-title h3">Title</div>
-            <div class="card-text">
-              Lorem ipsum dolor sit amet,
-
-              <a href="" class="btn btn-primary">Click</a>
-            </div>
-          </div>
-          <div class="card-footer text-muted">footer</div>
-        </div>
+      <a
+        href="#show-cards-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show cards code
+      </a>
+      <div id="show-cards-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-cards-code-block')"
+          class="btn btn-info"
+          id="show-cards-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-cards-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr class="anchor" id="forms" />
@@ -905,21 +1211,45 @@
         <code>form-group, form-control, form-control-label, and more</code>
       </div>
 
-      <div class="container">
-        <form>
-          <div class="form-group row">
-            <label for="first" class="form-control-label col-sm-2">First</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="first" />
+      <div id="forms-code">
+        <div class="container">
+          <form>
+            <div class="form-group row">
+              <label for="first" class="form-control-label col-sm-2"
+                >First</label
+              >
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="first" />
+              </div>
             </div>
-          </div>
-          <div class="form-group row">
-            <label for="first1" class="col-sm-2">First1</label>
-            <div class="col-sm-10">
-              <input type="text" id="first1" class="form-control" />
+            <div class="form-group row">
+              <label for="first1" class="col-sm-2">First1</label>
+              <div class="col-sm-10">
+                <input type="text" id="first1" class="form-control" />
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
+      </div>
+      <!-- forms-code -->
+
+      <a
+        href="#show-forms-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show forms code
+      </a>
+      <div id="show-forms-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-forms-code-block')"
+          class="btn btn-info"
+          id="show-forms-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-forms-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr class="anchor" id="dropdown" />
@@ -932,22 +1262,44 @@
         >
       </div>
 
-      <div class="dropdown">
-        <button
-          type="button"
-          class="btn btn-lg btn-primary dropdown-toggle"
-          data-toggle="dropdown"
-        >
-          Drop Menu
-        </button>
-        <div class="dropdown-menu">
-          <h4 class="dropdown-header">select one from below</h4>
-          <a href="#" class="dropdown-item">Go Here</a>
-          <a href="#" class="dropdown-item disabled">Go There</a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">Go There</a>
-          <a href="#" class="dropdown-item">Go There</a>
+      <div id="dropdown-code">
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn btn-lg btn-primary dropdown-toggle"
+            data-toggle="dropdown"
+          >
+            Drop Menu
+          </button>
+          <div class="dropdown-menu">
+            <h4 class="dropdown-header">select one from below</h4>
+            <a href="#" class="dropdown-item">Go Here</a>
+            <a href="#" class="dropdown-item disabled">Go There</a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">Go There</a>
+            <a href="#" class="dropdown-item">Go There</a>
+          </div>
         </div>
+      </div>
+      <!-- dropdown-code -->
+
+      <a
+        href="#show-dropdown-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show dropdown code
+      </a>
+      <div id="show-dropdown-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-dropdown-code-block')"
+          class="btn btn-info"
+          id="show-dropdown-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-dropdown-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr class="anchor" id="alerts" />
@@ -957,21 +1309,43 @@
         <code>alert, alert-dismissible, alert-heading, and more</code>
       </div>
 
-      <div class="alert alert-success">
-        <p>Welcome to my page</p>
+      <div id="alerts-code">
+        <div class="alert alert-success">
+          <p>Welcome to my page</p>
+        </div>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert">
+            <span>x</span>
+          </button>
+          <p>Welcome to my page</p>
+        </div>
+        <div class="alert alert-danger">
+          <h3 class="alert-heading">welcome</h3>
+          <p>Welcome to my page</p>
+        </div>
+        <div class="alert alert-info">
+          <p>Welcome to my page</p>
+        </div>
       </div>
-      <div class="alert alert-warning alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert">
-          <span>x</span>
+      <!-- alerts-code -->
+
+      <a
+        href="#show-alerts-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show alerts code
+      </a>
+      <div id="show-alerts-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-alerts-code-block')"
+          class="btn btn-info"
+          id="show-alerts-code-copy"
+        >
+          Copy code
         </button>
-        <p>Welcome to my page</p>
-      </div>
-      <div class="alert alert-danger">
-        <h3 class="alert-heading">welcome</h3>
-        <p>Welcome to my page</p>
-      </div>
-      <div class="alert alert-info">
-        <p>Welcome to my page</p>
+        <pre>
+          <code contentEditable id="show-alerts-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr class="anchor" id="tooltips" />
@@ -981,25 +1355,47 @@
         <code>tooltip, and more</code>
       </div>
 
-      <button
-        type="button"
-        class="btn btn-primary"
-        data-toggle="tooltip"
-        data-placement="left"
-        title="hello world"
-      >
-        Tool tip shows hello world
-      </button>
+      <div id="tooltips-code">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="tooltip"
+          data-placement="left"
+          title="hello world"
+        >
+          Tool tip shows hello world
+        </button>
 
-      <button
-        type="button"
-        class="btn btn-warning"
-        data-toggle="popover"
-        data-placement="bottom"
-        data-content="hello world"
-      >
-        Tool tip shows hello world (click)
-      </button>
+        <button
+          type="button"
+          class="btn btn-warning"
+          data-toggle="popover"
+          data-placement="bottom"
+          data-content="hello world"
+        >
+          Tool tip shows hello world (click)
+        </button>
+      </div>
+      <!-- tooltips-code -->
+
+      <a
+        href="#show-tooltips-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show tooltips code
+      </a>
+      <div id="show-tooltips-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-tooltips-code-block')"
+          class="btn btn-info"
+          id="show-tooltips-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-tooltips-code-block">code goes here</code>
+        </pre>
+      </div>
 
       <hr class="anchor" id="collapse" />
 
@@ -1008,37 +1404,59 @@
         <code>collapse, and more</code>
       </div>
 
-      <a href="#col1" class="btn btn-primary" data-toggle="collapse"
-        >Show #1
-      </a>
-      <a href="#col2" class="btn btn-primary" data-toggle="collapse"
-        >Show #2
-      </a>
+      <div id="collapse-code">
+        <a href="#col1" class="btn btn-primary" data-toggle="collapse"
+          >Show #1
+        </a>
+        <a href="#col2" class="btn btn-primary" data-toggle="collapse"
+          >Show #2
+        </a>
 
-      <a href=".mcoll" class="btn btn-primary" data-toggle="collapse"
-        >Show Both
-      </a>
+        <a href=".mcoll" class="btn btn-primary" data-toggle="collapse"
+          >Show Both
+        </a>
 
-      <div id="col2" class="collapse mcoll">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        <div id="col2" class="collapse mcoll">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </div>
+        <div id="col1" class="collapse mcoll">
+          <p>
+            Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus.
+          </p>
+
+          <p>
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          </p>
+
+          <p>Nulla consequat massa quis enim.</p>
+
+          <p>
+            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+          </p>
+
+          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+        </div>
       </div>
-      <div id="col1" class="collapse mcoll">
-        <p>
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus.
-        </p>
+      <!-- collapse-code -->
 
-        <p>
-          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-        </p>
-
-        <p>Nulla consequat massa quis enim.</p>
-
-        <p>
-          Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-        </p>
-
-        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+      <a
+        href="#show-collapse-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show collapse code
+      </a>
+      <div id="show-collapse-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-collapse-code-block')"
+          class="btn btn-info"
+          id="show-collapse-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-collapse-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr class="anchor" id="modals" />
@@ -1051,70 +1469,92 @@
         >
       </div>
 
-      <button
-        type="button"
-        class="btn btn-primary"
-        data-toggle="modal"
-        data-target="#myMod"
-      >
-        Open
-      </button>
-      <button
-        type="button"
-        class="btn btn-primary"
-        data-toggle="modal"
-        data-target="#myMod1"
-      >
-        Open
-      </button>
-      <div id="myMod" class="modal fade">
-        <div class="modal-dialog modal-sm">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">Title</h3>
-              <button type="button" class="close" data-dismiss="modal">
-                <span>x</span>
-              </button>
+      <div id="modals-code">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#myMod"
+        >
+          Open
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#myMod1"
+        >
+          Open
+        </button>
+        <div id="myMod" class="modal fade">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Title</h3>
+                <button type="button" class="close" data-dismiss="modal">
+                  <span>x</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Hello World
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-dismiss="modal"
+                >
+                  X
+                </button>
+              </div>
             </div>
-            <div class="modal-body">
-              Hello World
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-dismiss="modal"
-              >
-                X
-              </button>
+          </div>
+        </div>
+
+        <div id="myMod1" class="modal fade">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Title</h3>
+                <button type="button" class="close" data-dismiss="modal">
+                  <span>x</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Hello World
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-dismiss="modal"
+                >
+                  X
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- modals-code -->
 
-      <div id="myMod1" class="modal fade">
-        <div class="modal-dialog modal-sm">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">Title</h3>
-              <button type="button" class="close" data-dismiss="modal">
-                <span>x</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              Hello World
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-primary"
-                data-dismiss="modal"
-              >
-                X
-              </button>
-            </div>
-          </div>
-        </div>
+      <a
+        href="#show-modals-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show modals code
+      </a>
+      <div id="show-modals-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-modals-code-block')"
+          class="btn btn-info"
+          id="show-modals-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-modals-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr class="anchor" id="carousel" />
@@ -1127,86 +1567,152 @@
         >
       </div>
 
-      <div id="car1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="http://via.placeholder.com/1200x450"
-              class="img-fluid"
-              alt="test image 1"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="http://via.placeholder.com/1200x450"
-              class="img-fluid"
-              alt="test image 1"
-            />
+      <div id="carousel-1-code">
+        <div id="car1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="http://via.placeholder.com/1200x450"
+                class="img-fluid"
+                alt="test image 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="http://via.placeholder.com/1200x450"
+                class="img-fluid"
+                alt="test image 1"
+              />
+            </div>
           </div>
         </div>
+      </div>
+      <!-- carousel-1-code -->
+
+      <a
+        href="#show-carousel-1-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show carousel 1 code
+      </a>
+      <div id="show-carousel-1-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-carousel-1-code-block')"
+          class="btn btn-info"
+          id="show-carousel-1-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-carousel-1-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr />
 
-      <div id="car2" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="http://via.placeholder.com/1200x450"
-              class="img-fluid"
-              alt="test image 1"
-            />
+      <div id="carousel-2-code">
+        <div id="car2" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="http://via.placeholder.com/1200x450"
+                class="img-fluid"
+                alt="test image 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="http://via.placeholder.com/1200x450"
+                class="img-fluid"
+                alt="test image 1"
+              />
+            </div>
           </div>
-          <div class="carousel-item">
-            <img
-              src="http://via.placeholder.com/1200x450"
-              class="img-fluid"
-              alt="test image 1"
-            />
-          </div>
+          <a href="#car2" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">previous</span>
+          </a>
+          <a href="#car2" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">next</span>
+          </a>
         </div>
-        <a href="#car2" class="carousel-control-prev" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-          <span class="sr-only">previous</span>
-        </a>
-        <a href="#car2" class="carousel-control-next" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-          <span class="sr-only">next</span>
-        </a>
+      </div>
+      <!-- carousel-2-code -->
+
+      <a
+        href="#show-carousel-2-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show carousel 2 code
+      </a>
+      <div id="show-carousel-2-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-carousel-2-code-block')"
+          class="btn btn-info"
+          id="show-carousel-2-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-carousel-2-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr />
 
-      <div id="car3" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#car3" data-slide-to="0" class="active"></li>
-          <li data-target="#car3" data-slide-to="1"></li>
-          <li data-target="#car3" data-slide-to="2"></li>
-        </ol>
+      <div id="carousel-3-code">
+        <div id="car3" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#car3" data-slide-to="0" class="active"></li>
+            <li data-target="#car3" data-slide-to="1"></li>
+            <li data-target="#car3" data-slide-to="2"></li>
+          </ol>
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="http://via.placeholder.com/1200x450"
-              class="img-fluid"
-              alt="test image 1"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="http://via.placeholder.com/1200x450"
-              class="img-fluid"
-              alt="test image 1"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="http://via.placeholder.com/1200x450"
-              class="img-fluid"
-              alt="test image 1"
-            />
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="http://via.placeholder.com/1200x450"
+                class="img-fluid"
+                alt="test image 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="http://via.placeholder.com/1200x450"
+                class="img-fluid"
+                alt="test image 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="http://via.placeholder.com/1200x450"
+                class="img-fluid"
+                alt="test image 1"
+              />
+            </div>
           </div>
         </div>
+      </div>
+      <!-- carousel-3-code -->
+
+      <a
+        href="#show-carousel-3-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show carousel 3 code
+      </a>
+      <div id="show-carousel-3-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-carousel-3-code-block')"
+          class="btn btn-info"
+          id="show-carousel-3-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-carousel-3-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr class="anchor" id="navigation" />
@@ -1216,42 +1722,64 @@
         <code>nav, nav-pills, nav-link, nav-tabs, nav-fill, and more</code>
       </div>
 
-      <div class="container">
-        <nav class="nav nav-pills">
-          <a href="#" class="nav-link">link 1</a>
-          <a href="#" class="nav-link">link 2</a>
-          <a href="#" class="nav-link active">link 3</a>
-          <a href="#" class="nav-link">link</a>
-        </nav>
+      <div id="navigation-code">
+        <div class="container">
+          <nav class="nav nav-pills">
+            <a href="#" class="nav-link">link 1</a>
+            <a href="#" class="nav-link">link 2</a>
+            <a href="#" class="nav-link active">link 3</a>
+            <a href="#" class="nav-link">link</a>
+          </nav>
 
-        <ul class="nav justify-content-end nav-tabs nav-fill">
-          <li class="nav-item">
-            <a href="#" class="nav-link active">link 1</a>
-          </li>
-          <li class="nav-item dropdown">
-            <button
-              type="button"
-              class="nav-link dropdown-toggle"
-              data-toggle="dropdown"
-            >
-              Drop Menu
-            </button>
-            <div class="dropdown-menu">
-              <h4 class="dropdown-header">select one from below</h4>
-              <a href="#" class="dropdown-item">Go Here</a>
-              <a href="#" class="dropdown-item disabled">Go There</a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">Go There</a>
-              <a href="#" class="dropdown-item">Go There</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">link 3</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link disabled">link</a>
-          </li>
-        </ul>
+          <ul class="nav justify-content-end nav-tabs nav-fill">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">link 1</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button
+                type="button"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                Drop Menu
+              </button>
+              <div class="dropdown-menu">
+                <h4 class="dropdown-header">select one from below</h4>
+                <a href="#" class="dropdown-item">Go Here</a>
+                <a href="#" class="dropdown-item disabled">Go There</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Go There</a>
+                <a href="#" class="dropdown-item">Go There</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">link 3</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link disabled">link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- navigation-code -->
+
+      <a
+        href="#show-navigation-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show navigation code
+      </a>
+      <div id="show-navigation-code" class="collapse mcoll code-copy-button">
+        <button
+          onclick="copyCode('show-navigation-code-block')"
+          class="btn btn-info"
+          id="show-navigation-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-navigation-code-block">code goes here</code>
+        </pre>
       </div>
 
       <hr />
@@ -1264,34 +1792,59 @@
         >
       </div>
 
-      <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#myNav2"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div id="more-navigation-code">
+        <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#myNav2"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <a href="" class="navbar-brand">Logo</a>
-        <div class="collapse navbar-collapse" id="myNav2">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 1</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 2</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 3</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">link</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <a href="" class="navbar-brand">Logo</a>
+          <div class="collapse navbar-collapse" id="myNav2">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="" class="nav-link">Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Link 2</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Link 3</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">link</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- more-navigation-code -->
+
+      <a
+        href="#show-more-navigation-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show more navigation code
+      </a>
+      <div
+        id="show-more-navigation-code"
+        class="collapse mcoll code-copy-button"
+      >
+        <button
+          onclick="copyCode('show-more-navigation-code-block')"
+          class="btn btn-info"
+          id="show-more-navigation-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-more-navigation-code-block">code goes here</code>
+        </pre>
+      </div>
 
       <hr />
 
@@ -1303,54 +1856,79 @@
         >
       </div>
 
-      <nav class="navbar sticky-top navbar-dark navbar-expand-sm bg-info">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#myNav3"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div id="even-more-navigation-code">
+        <nav class="navbar sticky-top navbar-dark navbar-expand-sm bg-info">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#myNav3"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <a href="" class="navbar-brand">Logo</a>
-        <div class="collapse navbar-collapse" id="myNav3">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 1</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 2</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Link 3</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="http://example.com"
-                id="navbarDropdownMenuLink2"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Dropdown link
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink2"
-              >
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <a href="" class="navbar-brand">Logo</a>
+          <div class="collapse navbar-collapse" id="myNav3">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="" class="nav-link">Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Link 2</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Link 3</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="http://example.com"
+                  id="navbarDropdownMenuLink2"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Dropdown link
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink2"
+                >
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- even-more-navigation-code -->
+
+      <a
+        href="#show-even-more-navigation-code"
+        class="btn btn-primary show-button"
+        data-toggle="collapse"
+        >show even more navigation code
+      </a>
+      <div
+        id="show-even-more-navigation-code"
+        class="collapse mcoll code-copy-button"
+      >
+        <button
+          onclick="copyCode('show-even-more-navigation-code-block')"
+          class="btn btn-info"
+          id="show-even-more-navigation-code-copy"
+        >
+          Copy code
+        </button>
+        <pre>
+          <code contentEditable id="show-even-more-navigation-code-block">code goes here</code>
+        </pre>
+      </div>
 
       <hr />
       <hr />
@@ -1379,6 +1957,43 @@
         });
 
         $("#show-grid-layout-code-block").text($("#grid-layout-code").html());
+        $("#show-display-code-block").text($("#display-code").html());
+        $("#show-lists-code-block").text($("#lists-code").html());
+        $("#show-jumbotron-code-block").text($("#jumbotron-code").html());
+        $("#show-buttons-code-block").text($("#buttons-code").html());
+        $("#show-radio-checkboxes-code-block").text(
+          $("#radio-checkboxes-code").html()
+        );
+        $("#show-progress-bars-code-block").text(
+          $("#progress-bars-code").html()
+        );
+        $("#show-text-bg-colors-code-block").text(
+          $("#text-bg-colors-code").html()
+        );
+        $("#show-more-text-bg-colors-code-block").text(
+          $("#more-text-bg-colors-code").html()
+        );
+        $("#show-tables-1-code-block").text($("#tables-1-code").html());
+        $("#show-tables-2-code-block").text($("#tables-2-code").html());
+        $("#show-tables-3-code-block").text($("#tables-3-code").html());
+        $("#show-tables-4-code-block").text($("#tables-4-code").html());
+        $("#show-cards-code-block").text($("#cards-code").html());
+        $("#show-forms-code-block").text($("#forms-code").html());
+        $("#show-dropdown-code-block").text($("#dropdown-code").html());
+        $("#show-alerts-code-block").text($("#alerts-code").html());
+        $("#show-tooltips-code-block").text($("#tooltips-code").html());
+        $("#show-collapse-code-block").text($("#collapse-code").html());
+        $("#show-modals-code-block").text($("#modals-code").html());
+        $("#show-carousel-1-code-block").text($("#carousel-1-code").html());
+        $("#show-carousel-2-code-block").text($("#carousel-2-code").html());
+        $("#show-carousel-3-code-block").text($("#carousel-3-code").html());
+        $("#show-navigation-code-block").text($("#navigation-code").html());
+        $("#show-more-navigation-code-block").text(
+          $("#more-navigation-code").html()
+        );
+        $("#show-even-more-navigation-code-block").text(
+          $("#even-more-navigation-code").html()
+        );
       });
     </script>
   </body>
